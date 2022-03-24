@@ -16,12 +16,13 @@ namespace Lesson3_Prime_number
             int i = 1;
             while (i <= Number -1)
             {
-                i++;
+                
                 if (Number%i== 0)
-                       Proverka = true;
+                i++;
+                Proverka = true;
                break ;
             }
-            if (Proverka== false)
+            if (!Proverka)
                 Console.WriteLine( "Число простое" );
                 else
                 Console.WriteLine("Число не явлется простым");

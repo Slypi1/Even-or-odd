@@ -28,6 +28,7 @@ namespace Lesson3_BlackJack
                     case "Q": SumCard = SumCard + 10; break;
                     case "K": SumCard = SumCard + 10; break;
                     case "T": SumCard = SumCard + 10; break;
+                    default: Console.WriteLine("Данной карты не существует");break;
 
 
                 }
