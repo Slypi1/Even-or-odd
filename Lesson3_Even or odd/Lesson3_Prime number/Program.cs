@@ -12,15 +12,20 @@ namespace Lesson3_Prime_number
         {
             Console.WriteLine("Ввидите число: ");
             int Number = int.Parse(Console.ReadLine());
-            bool Proverka = false;
-            int i = 1;
-            while (i <= Number -1)
+            bool Proverka = true;
+            int i = 2;
+            while (i < Number -1)
             {
+
+                if (Number % i == 0)
+                {
+                    Proverka = true;
+                    break;
+                }
+                else
+                    Proverka = false;
+                    i++;
                 
-                if (Number%i== 0)
-                i++;
-                Proverka = true;
-               break ;
             }
             if (!Proverka)
                 Console.WriteLine( "Число простое" );
